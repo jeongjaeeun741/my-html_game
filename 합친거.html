@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>심심 할 때 들릴 수 있는 웹페이지</title>
+  <style>
+    body {
+        text-align: center;
+    }
+    h1 {
+        margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <audio src="메인음악.m4a" controls loop></audio>
+  <h1>심심 할 때 들릴 수 있는 웹페이지 (게임 선택)</h1><br>
+<h2>순발력 테스트 게임</h2>
+  <p>버튼을 눌러 새 창에서 순발력 게임을 시작하세요.</p>
+  <button onclick="openReactionGame()">게임 시작</button>
+
+  <h2>기억력 테스트 게임</h2>
+  <p>버튼을 눌러 새 창에서 기억력 게임을 시작하세요.</p>
+  <button onclick="openMemoryGame()">게임 시작</button>
+
+  <script>
+    function openReactionGame() {
+      window.open('과제 순발력테스트.html', '_blank', 'width=1000,height=600');
+    }
+    function openMemoryGame() {
+      window.open('과제 기억력 테스트.html', '_blank', 'width=1000,height=600');
+    }
+  </script>
+</body>
+</html>
